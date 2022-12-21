@@ -29,5 +29,7 @@ void add_recipient_to_source(sender_t *source, char *recipient_email);
 
 void files_list_reducer(char *data_source, char *temp_files, char *output_file);
 void files_reducer(char *temp_file, char *output_file);
+recipient_t *find_source_in_list_of_recipients(recipient_t *list, char *source_email);
+sender_t * push_chain(sender_t* l,FILE *f_out);
 
 #endif //A2022_REDUCERS_H
